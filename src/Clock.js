@@ -6,7 +6,7 @@ export class Clock extends Component {
 
   // will run once our render has finished running
   componentDidMount() {
-    this.ticker = setInterval(() => this.tick, 1000)
+    this.ticker = setInterval(() => this.tick(), 1000)
   }; 
 
   tick = () => this.setState({ date: new Date()}); 
