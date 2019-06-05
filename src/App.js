@@ -5,8 +5,15 @@ import { Container, Button, Divider, Header, Segment} from 'semantic-ui-react';
 
 class App extends Component {
   state = {
-    showClock: false,
+    showClock: false, 
   }; 
+
+  // componentDidMount() { 
+  //   fetch("https://swapi.co/api/people/1")
+  //     .then( res => {
+  //       debugger
+  //     })
+  // }; 
 
   toggleShowClock = () => {
     // Will return what we want the new state to be and then refresh that state. 
