@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Clock from './Clock';
 import { Container, Button, Divider, Header, Segment} from 'semantic-ui-react';
 
 
@@ -28,6 +29,8 @@ class App extends Component {
           size="mini" 
           inverted>
             Toggle Clock</Button>
+            
+            {this.state.showClock && <Clock/>}
         </Segment>
       </Container>
     )
