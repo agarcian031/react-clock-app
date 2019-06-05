@@ -11,6 +11,10 @@ export class Clock extends Component {
 
   tick = () => this.setState({ date: new Date()}); 
 
+  componentWillUnmount() {
+    clearInterval(this.ticker); 
+  };
+
   render() {
     return (
       <Fragment>

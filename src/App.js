@@ -20,7 +20,7 @@ class App extends Component {
   render() {
     return (
       <Container textAlign="center" style={{marginTop: "25px", letterSpacing: "3px", }}>
-        <Header textAlign="center" color="purple" size="huge"><i class="fas fa-clock"></i>
+        <Header textAlign="center" color="purple" size="huge"><i className="fas fa-clock"></i>
         React Clock</Header>
         <Divider/>
         <Segment raised color="blue"> 
